@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  proyectos-mono:
+    container_name: proyectos-mono
+    image: proyectos-mono:v1
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    networks:
+      - proyectos
+
+networks:
+  proyectos:
